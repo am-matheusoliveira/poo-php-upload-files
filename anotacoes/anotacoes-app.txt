@@ -1,0 +1,38 @@
+Data: 28/07/2024 11:20
+
+PHP Upload de arquivos - TIPOS DE ERROS 
+UPLOAD_ERR_OK
+    Valor: 0; não houve erro, o upload foi bem sucedido.
+
+UPLOAD_ERR_INI_SIZE
+    Valor 1; O arquivo enviado excede o limite definido na diretiva upload_max_filesize do php.ini.
+
+UPLOAD_ERR_FORM_SIZE
+    Valor: 2; O arquivo excede o limite definido em MAX_FILE_SIZE no formulário HTML.
+
+UPLOAD_ERR_PARTIAL
+    Valor: 3; O upload do arquivo foi feito parcialmente.
+
+UPLOAD_ERR_NO_FILE
+    Valor: 4; Nenhum arquivo foi enviado.
+
+UPLOAD_ERR_NO_TMP_DIR
+    Valor: 6; Pasta temporária ausente.
+
+UPLOAD_ERR_CANT_WRITE
+    Valor: 7; Falha ao escrever o arquivo no disco.
+
+UPLOAD_ERR_EXTENSION
+    Valor: 8; Uma extensão do PHP interrompeu o upload do arquivo.
+
+# array com as mensagens de erros
+$phpFileUploadErrors = array(
+    0 => 'não houve erro, o upload foi bem sucedido',
+    1 => 'O arquivo enviado excede o limite definido na diretiva upload_max_filesize do php.ini',
+    2 => 'O arquivo excede o limite definido em MAX_FILE_SIZE no formulário HTML',
+    3 => 'O upload do arquivo foi feito parcialmente',
+    4 => 'Nenhum arquivo foi enviado',
+    6 => 'Pasta temporária ausente',
+    7 => 'Falha ao escrever o arquivo no disco',
+    8 => 'Valor: 8; Uma extensão do PHP interrompeu o upload do arquivo',
+);

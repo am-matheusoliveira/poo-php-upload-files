@@ -1,0 +1,9 @@
+{
+    "name":"your-vendor-name/package-name",
+    "autoload": {
+        "psr-4":{
+            "App\\":"app"
+        }
+    }
+
+}
