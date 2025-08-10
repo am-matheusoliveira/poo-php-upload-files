@@ -19,7 +19,7 @@ if(isset($_FILES['arquivo'])){
     // PARÂMETRO '$overwrite' DEFINI SE DEVE OU NÃO SOBRESCREVER O ARQUIVO SE TIVER O MESMO NOME E TIPO
     $sucesso = $obUpload->upload(__DIR__.'/files', false);
     if($sucesso){
-        echo('Arquivo <strong>'.$obUpload->getBasename().'</strong>enviado com sucesso!');
+        echo('Arquivo <strong>'.$obUpload->getBasename().'</strong> enviado com sucesso!');
         exit;        
     }
 
